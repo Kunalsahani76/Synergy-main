@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { RouteIcon, RadioTower, Lightbulb, CircuitBoard } from 'lucide-react';
+import { RouteIcon, Radio, ScanLine, Siren, Waves } from 'lucide-react';
 import Image from 'next/image';
 import SEOHead from '../../../components/SEO/SEOHead';
 import InternalLinks from '../../../components/SEO/InternalLinks';
@@ -43,6 +43,22 @@ const boomBarrierModels = [
       'Airport vehicle control points',
       'High-security government facilities',
     ],
+    pdfFeatures: [
+      'High-Speed Opening & Closing Operation', '24/7 Continuous Duty Performance',
+      'FASTag / RFID Integration', 'ANPR Camera Compatibility', 'Anti-Crash Safety Mechanism',
+      'Vehicle Loop Detector Support', 'Traffic Light Integration',
+      'Weatherproof & Corrosion-Resistant Housing', 'Remote Monitoring & Control',
+      'Heavy-Duty Industrial Motor with Long Service Life',
+    ],
+    pdfSpecifications: [
+      ['Boom Arm Length', 'Up to 3 metres'], ['Opening / Closing Time', '0.6–1.5 seconds'],
+      ['Power Consumption', '220 W'], ['Duty Cycle', '100% continuous operation'],
+      ['Operating Voltage', '230V AC, 50Hz'], ['Motor Type', 'High-Speed BLDC / Servo Motor'],
+      ['Protection Rating', 'IP54 / IP55'], ['Vehicle Detection', 'Inductive Loop Detector Compatible'],
+      ['Communication Interface', 'TCP/IP, RS485, Dry Contact'], ['Design Life', 'Minimum 5 million operating cycles'],
+      ['Integration Support', 'FASTag, RFID, ANPR & Toll Management Systems'],
+    ],
+    pdfApplications: ['Toll Plazas', 'Parking Areas'],
   },
   {
     name: 'Quick 5',
@@ -72,6 +88,37 @@ const boomBarrierModels = [
       'Shopping malls and retail centers',
       'University campuses',
       'Hospital vehicle access points',
+    ],
+    pdfFeatures: [
+      'Suitable for boom lengths from 3 to 5 metres.',
+      'High-performance electromechanical motor for reliable operation.',
+      'Fast opening and closing time for efficient vehicle flow.',
+      'Designed for high-duty cycle and continuous operation.',
+      'Low maintenance compared to hydraulic systems.',
+      'Robust powder-coated steel cabinet for outdoor use.',
+      'Integrated obstacle detection and automatic boom reversal.',
+      'Manual release mechanism for operation during power failure.',
+      'Compatible with RFID, UHF, ANPR, access control, and parking systems.',
+      'Smooth and quiet operation with precise boom movement.',
+      'Built-in limit switches for accurate boom positioning.',
+      'Corrosion-resistant construction suitable for harsh weather conditions.',
+      'LED traffic light and safety accessory integration support.',
+      'Energy-efficient motor with low power consumption.',
+      'Ideal for residential societies, commercial complexes, industrial facilities, and parking management applications.',
+    ],
+    pdfSpecifications: [
+      ['Boom Length', '3–5 m'], ['Opening Time', '3–5 seconds'], ['Duty Cycle', 'Up to 100%'],
+      ['Protection Rating', 'IP54 / IP55'], ['Motor Supply', '230V AC, 50Hz'],
+      ['Power Consumption', '180 W'], ['Service Life', '>5 million cycles'],
+      ['Manual Override', 'Available'], ['Safety Auto-Reverse', 'Supported'],
+      ['Operating Temperature', '-20°C to +55°C'],
+      ['Integration', 'RFID, ANPR, UHF & Access Control Systems compatible.'],
+    ],
+    pdfApplications: [
+      'Residential Societies and Gated Communities', 'Commercial and Corporate Office Complexes',
+      'Industrial Facilities and Manufacturing Plants', 'Shopping Malls and Parking Areas',
+      'Hospitals, Educational Institutions, and Government Buildings',
+      'Airports, Logistics Centers, and Transportation Hubs',
     ],
   },
   {
@@ -103,8 +150,38 @@ const boomBarrierModels = [
       'Prisons and correctional facilities',
       'High-value storage compounds',
     ],
+    pdfFeatures: [
+      'Suitable for boom lengths from 5 to 7 metres.',
+      'High-performance electromechanical geared motor for reliable operation.',
+      'Designed for high-duty cycle and continuous use.',
+      'Fast opening and closing time for efficient traffic management.',
+      'Smooth and quiet operation with precise boom control.',
+      'Integrated obstacle detection with automatic boom reversal.',
+      'Low maintenance and energy-efficient design.',
+      'Manual release mechanism for emergency operation during power failures.',
+      'Compatible with RFID, ANPR, UHF, parking, and access control systems.',
+      'Weatherproof and corrosion-resistant housing for outdoor installations.',
+    ],
+    pdfSpecifications: [
+      ['Boom Length', '5–7 metres'], ['Drive Type', 'Electromechanical Geared Motor'],
+      ['Power Supply', '230V AC, 50Hz'], ['Motor Power', '180 W'],
+      ['Opening / Closing Time', '4–8 seconds'], ['Duty Cycle', 'Up to 100% intensive use'],
+      ['Protection Rating', 'IP54 / IP55'], ['Operating Temperature', '-20°C to +55°C'],
+      ['Boom Material', 'High-Strength Aluminum'], ['Service Life', 'More than 8 million operating cycles'],
+    ],
+    pdfApplications: [
+      'Residential Societies and Gated Communities', 'Commercial and Corporate Office Complexes',
+      'Industrial Facilities and Manufacturing Plants', 'Shopping Malls and Parking Areas',
+      'Hospitals, Educational Institutions, and Government Buildings',
+      'Airports, Logistics Centers, and Transportation Hubs',
+    ],
   },
-];
+].map(({ pdfFeatures, pdfSpecifications, pdfApplications, ...model }) => ({
+  ...model,
+  features: pdfFeatures,
+  specifications: pdfSpecifications,
+  applications: pdfApplications,
+}));
 
 const productCategories = [
   { name: 'Automatic Boom Barrier', path: '/products/boom-barrier' },
@@ -122,22 +199,22 @@ const productCategories = [
 
 const accessories = [
   {
-    icon: <RouteIcon className="w-10 h-10 text-blue-500" />,
+    icon: <Radio className="w-10 h-10 text-blue-500" />,
     label: 'Remote & Receiver',
     bg: 'bg-blue-50',
   },
   {
-    icon: <RadioTower className="w-10 h-10 text-green-500" />,
+    icon: <ScanLine className="w-10 h-10 text-green-500" />,
     label: 'Infrared sensors',
     bg: 'bg-green-50',
   },
   {
-    icon: <Lightbulb className="w-10 h-10 text-yellow-500" />,
+    icon: <Siren className="w-10 h-10 text-yellow-500" />,
     label: 'Flashing light',
     bg: 'bg-yellow-50',
   },
   {
-    icon: <CircuitBoard className="w-10 h-10 text-purple-500" />,
+    icon: <Waves className="w-10 h-10 text-purple-500" />,
     label: 'Loop detectors',
     bg: 'bg-purple-50',
   },
@@ -208,7 +285,7 @@ export default function BoomBarrier() {
               BROCHURES
             </h3>
             <div className="flex items-center gap-3 px-4 py-3 transition-all rounded-lg bg-white/80 hover:bg-blue-100">
-              <RadioTower className="w-4 h-4 text-blue-600" />
+              <Radio className="w-4 h-4 text-blue-600" />
               <a href="#" className="text-sm font-semibold text-blue-900 hover:underline">
                 Boom Barrier Brochure.pdf
               </a>
@@ -219,7 +296,7 @@ export default function BoomBarrier() {
           <div className="p-5 shadow rounded-xl bg-gradient-to-br from-blue-50 to-white">
             <h3 className="flex items-center gap-2 mb-4 text-lg font-bold text-blue-900">
               <span className="p-2 text-white bg-blue-600 rounded-full">
-                <Lightbulb className="w-5 h-5" />
+                <Siren className="w-5 h-5" />
               </span>
               CONTACT US
             </h3>
@@ -275,6 +352,9 @@ export default function BoomBarrier() {
                     className="object-contain transition-transform duration-300 bg-gray-200"
                   />
                 </div>
+                <div className="px-4 py-3 text-center font-semibold text-blue-900 bg-white">
+                  {model.name}
+                </div>
 
               </motion.div>
             ))}
@@ -298,7 +378,7 @@ export default function BoomBarrier() {
 
               <div className="p-5 bg-white rounded-lg shadow">
                 <h3 className="mb-3 text-lg font-bold text-blue-600">Key Features</h3>
-                <ul className="space-y-2">
+                <ul className="hidden space-y-2">
                   {selectedModel.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <span className="flex-shrink-0 mt-1 mr-2 text-green-500">✓</span>
@@ -306,17 +386,41 @@ export default function BoomBarrier() {
                     </li>
                   ))}
                 </ul>
+                <div className="overflow-x-auto border border-gray-200 rounded-lg">
+                  <table className="w-full text-sm text-left">
+                    <tbody>
+                      {selectedModel.features.map((feature, index) => (
+                        <tr key={feature} className="border-b last:border-b-0 border-gray-200 even:bg-gray-50">
+                          <td className="w-10 px-3 py-3 font-semibold text-center text-blue-700">{index + 1}</td>
+                          <td className="px-3 py-3 text-gray-700">{feature}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               <div className="p-5 bg-white rounded-lg shadow">
                 <h3 className="mb-3 text-lg font-bold text-blue-600">Typical Applications</h3>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="hidden grid grid-cols-2 gap-2">
                   {selectedModel.applications.map((app, index) => (
                     <div key={index} className="flex items-center px-3 py-2 bg-gray-50 rounded">
                       <span className="mr-2 text-blue-500">•</span>
                       <span className="text-sm">{app}</span>
                     </div>
                   ))}
+                </div>
+                <div className="overflow-x-auto border border-gray-200 rounded-lg">
+                  <table className="w-full text-sm text-left">
+                    <tbody>
+                      {selectedModel.applications.map((app, index) => (
+                        <tr key={app} className="border-b last:border-b-0 border-gray-200 even:bg-gray-50">
+                          <td className="w-10 px-3 py-3 font-semibold text-center text-blue-700">{index + 1}</td>
+                          <td className="px-3 py-3 text-gray-700">{app}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </motion.div>
@@ -340,23 +444,28 @@ export default function BoomBarrier() {
 
               <div className="p-5 bg-white rounded-lg shadow">
                 <h3 className="mb-3 text-lg font-bold text-blue-600">Technical Specifications</h3>
+                <div className="overflow-x-auto border border-gray-200 rounded-lg">
                 <table className="w-full text-sm">
+                  <thead className="text-left text-white bg-blue-600">
+                    <tr><th className="px-3 py-3 font-semibold">Specification</th><th className="px-3 py-3 font-semibold">Details</th></tr>
+                  </thead>
                   <tbody>
                     {selectedModel.specifications.map(([spec, value], index) => (
-                      <tr key={index} className="border-b border-gray-100">
-                        <td className="py-2 font-medium text-gray-600">{spec}</td>
-                        <td className="py-2 text-right font-semibold">{value}</td>
+                      <tr key={index} className="border-b last:border-b-0 border-gray-200 even:bg-gray-50">
+                        <td className="px-3 py-3 font-medium text-gray-700">{spec}</td>
+                        <td className="px-3 py-3 font-semibold text-gray-900">{value}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
+                </div>
               </div>
             </motion.div>
           </div>
 
-          {/* Accessories Included */}
+          {/* Accessories */}
           <section className="mb-12">
-            <h2 className="mb-6 text-2xl font-bold">Accessories Included</h2>
+            <h2 className="mb-6 text-2xl font-bold">Accessories</h2>
             <div className="grid gap-6 md:grid-cols-4">
               {accessories.map((acc) => (
                 <motion.div
