@@ -122,7 +122,7 @@ const Disclaimer: React.FC = () => {
         <div className="fixed bottom-[max(5rem,env(safe-area-inset-bottom))] left-4 z-40 flex items-center gap-2">
           <button
             aria-label="Open disclaimer"
-            className="group relative inline-flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-white shadow-lg ring-2 ring-red-300 transition hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300"
+            className="group relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-red-600 text-white shadow-lg ring-2 ring-red-300 transition hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300"
             onClick={() => setShowModal(true)}
             title="Read disclaimer"
           >
@@ -136,5 +136,4 @@ const Disclaimer: React.FC = () => {
 }
 
 export default Disclaimer
-
 

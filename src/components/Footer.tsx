@@ -50,15 +50,15 @@ const Footer: React.FC = () => {
     <footer className="text-white bg-gray-700">
       {/* Main Footer Content */}
       <div className="container px-4 py-12 mx-auto">
-        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-5 md:grid-cols-2">
           {/* Company Info */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src={logo}
                 alt="Synergy Access Logo"
-                width={160} // 40 * 4 px (Tailwind 40 means 10rem = 160px)
-                height={200} // 50 * 4px = 200px
+                width={140}
+                height={175}
                 className="object-contain"
               />
             </Link>
@@ -91,9 +91,9 @@ const Footer: React.FC = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="flex items-center text-gray-300 transition-colors hover:text-red-400 group"
+                    className="relative flex items-center text-gray-300 transition-colors hover:text-red-400 group"
                   >
-                    <ArrowRight className="w-4 h-4 mr-2 transition-opacity opacity-0 group-hover:opacity-100" />
+                    <ArrowRight className="absolute w-4 h-4 -left-6 transition-opacity opacity-0 group-hover:opacity-100" />
                     <span className="transition-transform group-hover:translate-x-2">{link.name}</span>
                   </Link>
                 </li>
@@ -109,9 +109,9 @@ const Footer: React.FC = () => {
                 <li key={product}>
                   <Link
                     href={`/products/${product.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="flex items-center text-gray-300 transition-colors hover:text-red-400 group"
+                    className="relative flex items-center text-gray-300 transition-colors hover:text-red-400 group"
                   >
-                    <ArrowRight className="w-4 h-4 mr-2 transition-opacity opacity-0 group-hover:opacity-100" />
+                    <ArrowRight className="absolute w-4 h-4 -left-6 transition-opacity opacity-0 group-hover:opacity-100" />
                     <span className="transition-transform group-hover:translate-x-2">{product}</span>
                   </Link>
                 </li>
@@ -125,13 +125,36 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               {services.slice(0, 6).map((service) => (
                 <li key={service}>
-                  <span className="flex items-center text-gray-300 group">
-                    <ArrowRight className="w-4 h-4 mr-2 transition-opacity opacity-0 group-hover:opacity-100" />
+                  <span className="relative flex items-center text-gray-300 group">
+                    <ArrowRight className="absolute w-4 h-4 -left-6 transition-opacity opacity-0 group-hover:opacity-100" />
                     <span className="transition-transform group-hover:translate-x-2">{service}</span>
                   </span>
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Contact & Address */}
+          <div>
+            <h3 className="mb-6 text-lg font-semibold">Contact &amp; Address</h3>
+            <div className="space-y-3 text-gray-300">
+              <a
+                href="mailto:business@synergy-access.com"
+                className="block text-sm transition-colors hover:text-red-400"
+              >
+                business@synergy-access.com
+              </a>
+              <p className="text-sm leading-relaxed">
+                <strong className="text-white">Synergy Electrical and Automation</strong><br />
+                B-6, Sector-2, Noida 201301,<br />
+                Uttar Pradesh, India
+              </p>
+              <p className="text-sm leading-relaxed">
+                <strong className="text-white">Synergy Access Pvt. Ltd.</strong><br />
+                B-103, Sector-2, Noida 201301,<br />
+                Uttar Pradesh, India
+              </p>
+            </div>
           </div>
         </div>
       </div>
