@@ -39,13 +39,15 @@ export default function Page() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative w-full h-80 sm:h-96 md:h-120 rounded-xl"
         >
-          <Image
-            src="/assets/ev-charger-main.png"
-            alt="EV Charger"
-            fill
-            className="object-contain"
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
+          <Link href="/evcharger" aria-label="Explore EV Chargers" className="absolute inset-0">
+            <Image
+              src="/assets/ev-charger-main.png"
+              alt="EV Charger"
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </Link>
         </motion.div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Shield, Wrench, Trophy, CheckCircle, Users, Award, TrendingUp } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import Head from 'next/head';
 import Testimonials from './testimonials';
 import MagicSlider from './slider';
@@ -31,24 +32,27 @@ const products = [
     category: 'PARKING SYSTEM',
     title: 'A Modern Urban Approach',
     description: 'Complete parking management solution with RFID integration and real-time monitoring capabilities.',
-    number: '04',
+    number: '01',
     image: images.Best,
+    href: '/products/parking-management',
     features: ['RFID Integration', 'Real-time Monitoring', 'Payment Gateway', 'Mobile App Control'],
   },
   {
     category: 'BARRIER',
     title: 'Best in the Industry',
     description: 'World-class boom barriers extending up to 7 meters with advanced control systems.',
-    number: '01',
+    number: '02',
     image: images.boom3,
+    href: '/products/boomBarrier',
     features: ['7m Extension', 'Weather Resistant', 'LED Lighting', 'Remote Control'],
   },
   {
     category: 'BOLLARD',
     title: 'Robust & Sturdy',
     description: 'Heavy-duty automatic bollards for vehicle access control with hydraulic operation.',
-    number: '02',
+    number: '03',
     image: images.bollard,
+    href: '/products/bollards',
     features: ['Hydraulic Operation', 'Crash Rated', 'Stainless Steel', 'Emergency Override'],
   },
 ];
@@ -60,6 +64,7 @@ const productCategories = [
     title: 'Perimeter Protection',
     description: 'Advanced monitoring systems for complete perimeter security with 24/7 surveillance capabilities.',
     image: images.per,
+    href: '/products/solutions',
   },
   {
     icon: Trophy,
@@ -67,6 +72,7 @@ const productCategories = [
     title: 'Automatic Boom Barrier',
     description: 'Professional grade boom barriers for commercial applications with advanced control systems.',
     image: images.boom,
+    href: '/products/boomBarrier',
   },
   {
     icon: Wrench,
@@ -74,6 +80,7 @@ const productCategories = [
     title: 'Pedestrian Access Management',
     description: 'Smart turnstiles and access control for pedestrian areas with biometric integration.',
     image: images.Pedest,
+    href: '/products/tripod-turnstile',
   },
   {
     icon: Shield,
@@ -81,6 +88,7 @@ const productCategories = [
     title: 'Parking Management Systems',
     description: 'Comprehensive parking solutions with real-time monitoring and payment integration.',
     image: images.park,
+    href: '/products/parking-management',
   },
   {
     icon: Trophy,
@@ -88,6 +96,7 @@ const productCategories = [
     title: 'Metal Detectors',
     description: 'High-sensitivity metal detection systems for security checkpoints and access control.',
     image: images.Metal,
+    href: '/products/dfmd',
   },
   {
     icon: Wrench,
@@ -95,6 +104,7 @@ const productCategories = [
     title: 'Access Control System',
     description: 'Integrated access control with biometric authentication and real-time monitoring.',
     image: images.Access,
+    href: '/access-control-systems',
   },
 ];
 
@@ -341,6 +351,7 @@ export default function Home() {
           <div className="grid items-center gap-6 sm:gap-8 lg:grid-cols-2">
             <motion.div className="relative" variants={fadeInLeft}>
               <div className="grid grid-cols-2 gap-2 sm:gap-4">
+                <Link href="/about" aria-label="Learn more about Synergy Access">
                 <motion.div
                   className="relative transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
                   whileHover={{ scale: 1.05 }}
@@ -354,6 +365,8 @@ export default function Home() {
                     className="object-cover"
                   />
                 </motion.div>
+                </Link>
+                <Link href="/about" aria-label="Learn more about Synergy Access">
                 <motion.div
                   className="relative mt-3 sm:mt-6 transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
                   whileHover={{ scale: 1.05 }}
@@ -367,7 +380,9 @@ export default function Home() {
                     className="object-cover"
                   />
                 </motion.div>
+                </Link>
               </div>
+              <Link href="/about" className="block" aria-label="Learn more about Synergy Access">
               <motion.div 
                 className="absolute flex items-center justify-center w-20 h-20 sm:w-28 sm:h-28 text-white border-2 border-white rounded-full shadow-xl bg-gradient-to-br from-blue-600 to-red-400 -top-4 -right-4 sm:-top-6 sm:-right-6 ring-4 ring-red-200/30 sm:ring-4 animate-float"
                 initial={{ opacity: 0, scale: 0, rotate: -180 }}
@@ -381,6 +396,7 @@ export default function Home() {
                   <div className="text-xs font-semibold tracking-wider uppercase sm:text-sm">Experience</div>
                 </div>
               </motion.div>
+              </Link>
             </motion.div>
             <motion.div 
               variants={fadeInRight} 
@@ -438,8 +454,8 @@ export default function Home() {
           </motion.div>
           <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {products.map((product) => (
+              <Link key={product.number} href={product.href} className="block" aria-label={`View ${product.title}`}>
               <motion.div 
-                key={product.number} 
                 className="overflow-hidden transition-all duration-300 border border-gray-100 shadow-xl bg-white/90 rounded-xl sm:rounded-2xl product-card group hover:shadow-2xl animate-fade-in-up"
                 variants={scaleIn}
                 whileHover={{ y: -5, scale: 1.04 }}
@@ -475,6 +491,7 @@ export default function Home() {
                   </div>
                 </div>
               </motion.div>
+              </Link>
             ))}
           </div>
         </div>
@@ -499,8 +516,8 @@ export default function Home() {
           </motion.div>
           <div className="grid gap-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {productCategories.map((item, index) => (
+              <Link key={item.title} href={item.href} className="block" aria-label={`View ${item.title}`}>
               <motion.div 
-                key={index} 
                 className="overflow-hidden transition-all duration-300 shadow-xl cursor-pointer bg-gray-900/90 rounded-xl sm:rounded-2xl hover:bg-gray-800 group hover:shadow-2xl animate-fade-in-up"
                 variants={scaleIn}
                 whileHover={{ scale: 1.03, y: -3 }}
@@ -524,6 +541,7 @@ export default function Home() {
                   <p className="text-xs sm:text-sm text-gray-300">{item.description}</p>
                 </div>
               </motion.div>
+              </Link>
             ))}
           </div>
         </div>

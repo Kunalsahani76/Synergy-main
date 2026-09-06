@@ -57,8 +57,8 @@ const Footer: React.FC = () => {
               <Image
                 src={logo}
                 alt="Synergy Access Logo"
-                width={140}
-                height={175}
+                width={125}
+                height={156}
                 className="object-contain"
               />
             </Link>
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Products */}
-          <div>
+          <div className="lg:-translate-x-8">
             <h3 className="mb-6 text-lg font-semibold">Our Products</h3>
             <ul className="space-y-3">
               {productLinks.map((product) => (
@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="lg:-translate-x-8">
             <h3 className="mb-6 text-lg font-semibold">Our Services</h3>
             <ul className="space-y-3">
               {services.slice(0, 6).map((service) => (
@@ -135,9 +135,16 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact & Address */}
-          <div>
-            <h3 className="mb-6 text-lg font-semibold">Contact &amp; Address</h3>
+          <div className="lg:-translate-x-8">
+            <h3 className="mb-6 text-lg font-semibold">Contact</h3>
             <div className="space-y-3 text-gray-300">
+              <a
+                href="tel:+919999339265"
+                className="block text-sm transition-colors hover:text-red-400"
+              >
+                +91 99993 39265
+              </a>
+              <p className="text-sm">Mon - Sat: 9:00 AM - 7:00 PM</p>
               <a
                 href="mailto:business@synergy-access.com"
                 className="block text-sm transition-colors hover:text-red-400"

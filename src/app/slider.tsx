@@ -1,19 +1,21 @@
 "use client";
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Slide {
   id: number;
   image: string;
   alt?: string;
+  href: string;
 }
 
 const slides: Slide[] = [
-  { id: 1, image: '/assets/killer.png', alt: 'Tyre killer security system' },
-  { id: 2, image: '/assets/roadblocker.png', alt: 'Road blocker security barrier' },
-  { id: 3, image: '/assets/bollardbanner.png', alt: 'Hydraulic bollard system' },
-  { id: 4, image: '/assets/Automatic Number.jpeg', alt: 'Automatic number plate recognition' },
-  { id: 5, image: '/assets/boom3.jpeg', alt: 'Boom barrier system' },
+  { id: 1, image: '/assets/killer.png', alt: 'Tyre killer security system', href: '/products/tyre-killer' },
+  { id: 2, image: '/assets/roadblocker.png', alt: 'Road blocker security barrier', href: '/products/road-blocker' },
+  { id: 3, image: '/assets/bollardbanner.png', alt: 'Hydraulic bollard system', href: '/products/bollards' },
+  { id: 4, image: '/assets/Automatic Number.jpeg', alt: 'Automatic number plate recognition', href: '/products/anpr-solution' },
+  { id: 5, image: '/assets/boom3.jpeg', alt: 'Boom barrier system', href: '/products/boomBarrier' },
 ];
 
 const SLIDE_DURATION = 3;
@@ -107,7 +109,7 @@ const MagicSlider: React.FC = () => {
                 idx === currentSlide ? 'opacity-100 z-10 scale-100' : 'opacity-0 z-0 scale-105'
               }`}
             >
-              <div className="relative w-full h-full">
+              <Link href={slide.href} className="relative block w-full h-full" aria-label={`View ${slide.alt}`}>
                 <Image
                   src={slide.image}
                   alt={slide.alt || `Slide ${idx + 1}`}
@@ -116,7 +118,7 @@ const MagicSlider: React.FC = () => {
                   priority={idx === 0}
                   sizes="100vw"
                 />
-              </div>
+              </Link>
             </div>
           ))}
         </div>
