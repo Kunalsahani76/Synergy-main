@@ -104,7 +104,7 @@ const productCategories = [
     title: 'Access Control System',
     description: 'Integrated access control with biometric authentication and real-time monitoring.',
     image: images.Access,
-    href: '/access-control-systems',
+    href: '/products/biometric-fingerprint',
   },
 ];
 
