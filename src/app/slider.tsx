@@ -15,7 +15,7 @@ const slides: Slide[] = [
   { id: 2, image: '/assets/roadblocker.png', alt: 'Road blocker security barrier', href: '/products/road-blocker' },
   { id: 3, image: '/assets/bollardbanner.png', alt: 'Hydraulic bollard system', href: '/products/bollards' },
   { id: 4, image: '/assets/Automatic Number.jpeg', alt: 'Automatic number plate recognition', href: '/products/anpr-solution' },
-  { id: 5, image: '/assets/boom3.jpeg', alt: 'Boom barrier system', href: '/products/boomBarrier' },
+  { id: 5, image: '/assets/boom3.jpeg', alt: 'Boom barrier system', href: '/products/boom-barrier' },
 ];
 
 const SLIDE_DURATION = 3;

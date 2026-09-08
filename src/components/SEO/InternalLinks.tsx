@@ -33,7 +33,7 @@ const InternalLinks: React.FC<InternalLinksProps> = ({
     products: [
       {
         title: 'Boom Barriers',
-        path: '/products/boomBarrier',
+        path: '/products/boom-barrier',
         description: 'Heavy-duty automatic boom barriers with 7m extension capability',
         category: 'Access Control'
       },

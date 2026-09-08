@@ -50,7 +50,7 @@ export default function ProductsPage() {
         {
           name: 'Boom Barriers',
           image: '/assets/boombarr.jpg',
-          href: '/products/boomBarrier',
+          href: '/products/boom-barrier',
           description: 'Automatic boom barriers for parking and vehicle access control'
         },
         {

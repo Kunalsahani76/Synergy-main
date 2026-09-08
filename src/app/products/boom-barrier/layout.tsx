@@ -3,7 +3,7 @@ import { generateMetadata, productMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = generateMetadata({
     ...productMetadata.boomBarrier,
-    canonical: 'https://www.synergy-access.com/products/boomBarrier',
+    canonical: 'https://www.synergy-access.com/products/boom-barrier',
 });
 
 export default function BoomBarrierLayout({

@@ -43,7 +43,7 @@ const products = [
     description: 'World-class boom barriers extending up to 7 meters with advanced control systems.',
     number: '02',
     image: images.boom3,
-    href: '/products/boomBarrier',
+    href: '/products/boom-barrier',
     features: ['7m Extension', 'Weather Resistant', 'LED Lighting', 'Remote Control'],
   },
   {
@@ -72,7 +72,7 @@ const productCategories = [
     title: 'Automatic Boom Barrier',
     description: 'Professional grade boom barriers for commercial applications with advanced control systems.',
     image: images.boom,
-    href: '/products/boomBarrier',
+    href: '/products/boom-barrier',
   },
   {
     icon: Wrench,

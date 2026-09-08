@@ -21,7 +21,7 @@ const products = [
     name: 'Gate Automation',
     key: 'gate-automation',
     subItems: [
-      { name: 'Boom Barrier', href: '/products/boomBarrier', icon: <CustomIcon src="/assets/icons/barrier.png" alt="Boom Barrier" /> },
+      { name: 'Boom Barrier', href: '/products/boom-barrier', icon: <CustomIcon src="/assets/icons/barrier.png" alt="Boom Barrier" /> },
       { name: 'Bollards', href: '/products/bollards', icon: <CustomIcon src="/assets/icons/bollard.png" alt="Bollards" /> },
       { name: 'Tyre Killer', href: '/products/tyre-killer', icon: <CustomIcon src="/assets/icons/tyre.png" alt="Tyre Killer" /> },
       { name: 'Road Blocker', href: '/products/road-blocker', icon: <CustomIcon src="/assets/icons/roadblocker.png" alt="Road Blocker" /> },

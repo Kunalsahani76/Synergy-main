@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Product pages
   const productPages = [
-    '/products/boomBarrier',
+    '/products/boom-barrier',
     '/products/bollards',
     '/products/tripod-turnstile',
     '/products/flap-swing-barrier',

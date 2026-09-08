@@ -7,7 +7,7 @@ import { ArrowLeft, Home, Phone } from 'lucide-react';
 
 export default function NotFound() {
   const popularPages = [
-    { name: 'Boom Barriers', href: '/products/boomBarrier', icon: '🚧' },
+    { name: 'Boom Barriers', href: '/products/boom-barrier', icon: '🚧' },
     { name: 'Bollards', href: '/products/bollards', icon: '🛡️' },
     { name: 'Turnstiles', href: '/products/tripod-turnstile', icon: '🚪' },
     { name: 'Access Control', href: '/products/biometric-fingerprint', icon: '👆' },

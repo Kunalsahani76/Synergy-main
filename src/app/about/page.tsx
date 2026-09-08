@@ -189,7 +189,7 @@ const About: React.FC = () => {
         url: 'https://www.synergy-access.com'
       }
     },
-    url: 'https://www.synergy-access.com/products/boomBarrier'
+    url: 'https://www.synergy-access.com/products/boom-barrier'
   };
 
   const bollardsProductData = {

@@ -7,7 +7,7 @@ const redirectMap: Record<string, string> = {
   '/services/pedestrian-access-management': '/products/tripod-turnstile',
   '/team/kyle-sapien': '/about',
   '/coming-soon': '/',
-  '/sliding-barrier-boom-barrier': '/products/boomBarrier',
+  '/sliding-barrier-boom-barrier': '/products/boom-barrier',
   '/services/p-type-swing-barrier-p90': '/products/p-type-swing-barrier',
   '/synergy-access-pvt-ltd': '/synergy-access',
   '/synergyaccess': '/synergy-access',
