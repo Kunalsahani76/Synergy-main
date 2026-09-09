@@ -1,10 +1,12 @@
 "use client"
 
 import React, { useEffect, useState, useCallback, useRef } from "react"
+import { usePathname } from "next/navigation"
 import { AlertTriangle } from "lucide-react"
 
 const Disclaimer: React.FC = () => {
-  const [showModal, setShowModal] = useState<boolean>(true)
+  const pathname = usePathname()
+  const [showModal, setShowModal] = useState<boolean>(false)
   const [showFloatingIcon, setShowFloatingIcon] = useState<boolean>(false)
   const [mounted, setMounted] = useState<boolean>(false)
   const modalRef = useRef<HTMLDivElement | null>(null)
@@ -16,7 +18,21 @@ const Disclaimer: React.FC = () => {
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+
+    // Show the disclaimer only once per browser session, and only on the home page.
+    if (pathname !== "/" || sessionStorage.getItem("synergy-disclaimer-seen")) return
+
+    sessionStorage.setItem("synergy-disclaimer-seen", "true")
+    setShowModal(true)
+  }, [pathname])
+
+  useEffect(() => {
+    // Never keep the disclaimer (or its minimized icon) visible outside home.
+    if (pathname !== "/") {
+      setShowModal(false)
+      setShowFloatingIcon(false)
+    }
+  }, [pathname])
 
   useEffect(() => {
     // Collapse the modal to floating icon on first user scroll/touch
@@ -118,7 +134,7 @@ const Disclaimer: React.FC = () => {
         </div>
       )}
 
-      {showFloatingIcon && (
+      {pathname === "/" && showFloatingIcon && (
         <div className="fixed bottom-[max(5rem,env(safe-area-inset-bottom))] left-4 z-40 flex items-center gap-2">
           <button
             aria-label="Open disclaimer"
@@ -136,4 +152,3 @@ const Disclaimer: React.FC = () => {
 }
 
 export default Disclaimer
-
