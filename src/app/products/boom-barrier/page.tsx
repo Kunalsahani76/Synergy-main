@@ -8,7 +8,7 @@ import InternalLinks from '../../../components/SEO/InternalLinks';
 import { generateSEOData, generateStructuredData } from '../../../components/utils/seo';
 
 
-const banner = '/assets/banner2.jpeg';
+const banner = '/assets/Boom Barrier/Hero.png';
 const boom1 = '/assets/Super-Fast 3.jpeg';
 const boom2 = '/assets/Quick-5.jpg';
 const boom3 = '/assets/Supermacy-7.jpg';
