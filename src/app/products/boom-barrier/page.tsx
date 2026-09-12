@@ -243,13 +243,25 @@ export default function BoomBarrier() {
       <div className="relative w-full h-[180px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]">
         <Image
           src={banner}
-          alt="About Synergy Access Banner"
+          alt="Quick 5 boom barrier"
           fill
           priority
           className="object-cover object-center"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
         />
-
+        <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/50 to-transparent" />
+        <div className="absolute inset-y-0 right-[8%] flex max-w-[78%] flex-col justify-center text-white sm:right-[12%] sm:max-w-md md:right-[14%]">
+          <h1 className="text-2xl font-bold leading-none sm:text-4xl md:text-5xl lg:text-6xl">
+            Boom <span className="text-orange-500">Barrier</span>
+          </h1>
+          <h2 className="mt-1 text-lg font-bold leading-none sm:mt-2 sm:text-2xl md:text-3xl lg:text-4xl">
+            Quick 5
+          </h2>
+          <div className="mt-3 h-0.5 w-full bg-white sm:mt-5 md:h-1" />
+          <p className="mt-3 max-w-sm text-[9px] leading-relaxed text-gray-100 sm:mt-5 sm:text-xs md:text-sm">
+            At Synergy Access, we specialize in the design and manufacturing of high-performance automatic boom barriers that ensure secure and efficient access control for your premises.
+          </p>
+        </div>
       </div>
 
       {/* Main Grid */}

@@ -14,10 +14,11 @@ const images = {
   boom1: '/assets/barrier.png',
   boom2: '/assets/barrier2.png',
   per: '/assets/peri.jpg',
+  Monitor: '/assets/Monitor.jpg',
   boom: '/assets/Boom-Barrier.jpeg',
   Pedest: '/assets/pades.jpg',
-  park: '/assets/parking.jpg',
-  Metal: '/assets/metal.jpg',
+  park: '/assets/Parking Management System-1.jpeg',
+  Metal: '/assets/Metal Dectector.jpg',
   Access: '/assets/control.jpg',
   Best: '/assets/boombarr.jpg',
   boom3: '/assets/boom3.jpeg',
@@ -63,7 +64,7 @@ const productCategories = [
     category: 'MONITOR',
     title: 'Perimeter Protection',
     description: 'Advanced monitoring systems for complete perimeter security with 24/7 surveillance capabilities.',
-    image: images.per,
+    image: images.Monitor,
     href: '/products/solutions',
   },
   {
@@ -79,7 +80,7 @@ const productCategories = [
     category: 'IMPROVE',
     title: 'Pedestrian Access Management',
     description: 'Smart turnstiles and access control for pedestrian areas with biometric integration.',
-    image: images.Pedest,
+    image: images.per,
     href: '/products/tripod-turnstile',
   },
   {
@@ -527,7 +528,11 @@ export default function Home() {
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className={item.title === 'Parking Management Systems'
+                      ? 'object-cover object-[center_60%] transition-transform duration-500 group-hover:scale-110'
+                      : item.title === 'Metal Detectors'
+                        ? 'object-cover object-top transition-transform duration-500 group-hover:scale-110'
+                        : 'object-cover transition-transform duration-500 group-hover:scale-110'}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                 </div>
