@@ -703,7 +703,7 @@ const About: React.FC = () => {
                 <Image src={solution2} alt="CE" width={32} height={32} />
               </motion.div>
               <h3 className="mb-2 font-sans text-base font-semibold text-gray-800 sm:text-lg">CE</h3>
-              <p className="font-sans text-xs text-gray-600 sm:text-sm">Conformité Européenne</p>
+              <p className="font-sans text-xs text-gray-600 sm:text-sm">Conformity European</p>
             </motion.div>
           </div>
         </div>
