@@ -7,7 +7,7 @@ import { Shield, Target, Users, Award, CheckCircle, TrendingUp, Trophy, Puzzle, 
 import InternalLinks from '../../components/SEO/InternalLinks';
 
 import Image from 'next/image';
-const banner = '/assets/aboutus.jpg';
+const banner = '/assets/About us/Hero.png';
 const barrier1 = '/assets/barrier.png';
 const barrier2 = '/assets/barrier2.png';
 const solutionIcon = '/assets/icons/iso.png';
@@ -264,6 +264,23 @@ const About: React.FC = () => {
           className="object-cover object-center"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
         />
+        <div className="absolute inset-y-0 left-[62%] right-[4%] flex items-center">
+          <div className="max-w-xl text-white">
+            <div className="mb-2 h-0.5 w-10 bg-orange-500 sm:mb-3 sm:w-16 md:h-1 lg:w-24" />
+            <h1 className="mb-2 text-lg font-bold leading-none sm:mb-3 sm:text-3xl md:text-4xl lg:text-5xl">
+              About <span className="text-orange-500">Us</span>
+            </h1>
+            <p className="hidden text-xs leading-relaxed text-gray-100 sm:block sm:text-sm md:text-base lg:text-lg">
+              At Synergy Access, we specialize in providing a diverse and comprehensive range of access solutions tailored to the unique needs of residential, commercial, and industrial settings. From state-of-the-art vehicular access systems to pedestrian-friendly solutions and advanced parking management, we engineer safety with precision.
+            </p>
+            <Link
+              href="#company-introduction"
+              className="mt-3 inline-flex items-center gap-2 rounded border border-orange-500 px-2 py-1 text-[10px] font-semibold text-white transition-colors hover:bg-orange-500 sm:mt-4 sm:px-4 sm:py-2 sm:text-sm lg:mt-5"
+            >
+              Learn More <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </div>
       </div>
 
 
@@ -292,6 +309,7 @@ const About: React.FC = () => {
 
       {/* Company Introduction Section - Professionally Optimized */}
       <motion.section
+        id="company-introduction"
         className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-white overflow-hidden"
         initial="hidden"
         whileInView="visible"
