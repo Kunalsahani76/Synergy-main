@@ -11,8 +11,8 @@ import Carousel from './evcharger/carousel/page';
 
 // Image paths (place these images in public/images directory)
 const images = {
-  boom1: '/assets/barrier.png',
-  boom2: '/assets/barrier2.png',
+  boom1: '/assets/Years Experiance 1.jpg',
+  boom2: '/assets/Years Experiance 2.jpg',
   per: '/assets/peri.jpg',
   Monitor: '/assets/Monitor.jpg',
   boom: '/assets/Boom-Barrier.jpeg',
@@ -34,7 +34,7 @@ const products = [
     title: 'A Modern Urban Approach',
     description: 'Complete parking management solution with RFID integration and real-time monitoring capabilities.',
     number: '01',
-    image: images.Best,
+    image: '/assets/Parking System.png',
     href: '/products/parking-management',
     features: ['RFID Integration', 'Real-time Monitoring', 'Payment Gateway', 'Mobile App Control'],
   },
