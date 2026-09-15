@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 interface Slide {
   id: number;
@@ -109,7 +108,7 @@ const MagicSlider: React.FC = () => {
                 idx === currentSlide ? 'opacity-100 z-10 scale-100' : 'opacity-0 z-0 scale-105'
               }`}
             >
-              <Link href={slide.href} className="relative block w-full h-full" aria-label={`View ${slide.alt}`}>
+              <div className="relative block w-full h-full">
                 <Image
                   src={slide.image}
                   alt={slide.alt || `Slide ${idx + 1}`}
@@ -118,7 +117,7 @@ const MagicSlider: React.FC = () => {
                   priority={idx === 0}
                   sizes="100vw"
                 />
-              </Link>
+              </div>
             </div>
           ))}
         </div>
