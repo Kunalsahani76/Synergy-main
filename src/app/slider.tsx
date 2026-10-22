@@ -10,11 +10,11 @@ interface Slide {
 }
 
 const slides: Slide[] = [
-  { id: 1, image: '/assets/Home hero/1.png', alt: 'Tyre killer security system', href: '/products/tyre-killer' },
-  { id: 2, image: '/assets/Home hero/2.png', alt: 'Road blocker security barrier', href: '/products/road-blocker' },
-  { id: 3, image: '/assets/Home hero/3.png', alt: 'Hydraulic bollard system', href: '/products/bollards' },
-  { id: 4, image: '/assets/Home hero/4.png', alt: 'Automatic number plate recognition', href: '/products/anpr-solution' },
-  { id: 5, image: '/assets/Home hero/5.png', alt: 'Boom barrier system', href: '/products/boom-barrier' },
+  { id: 1, image: '/Updated/synergy/N-1.png', alt: 'Tyre killer security system', href: '/products/tyre-killer' },
+  { id: 2, image: '/Updated/synergy/N-2.png', alt: 'Road blocker security barrier', href: '/products/road-blocker' },
+  { id: 3, image: '/Updated/synergy/N-3.png', alt: 'Hydraulic bollard system', href: '/products/bollards' },
+  { id: 4, image: '/Updated/synergy/N-4.png', alt: 'Automatic number plate recognition', href: '/products/anpr-solution' },
+  { id: 5, image: '/Updated/synergy/N-5.png', alt: 'Boom barrier system', href: '/products/boom-barrier' },
 ];
 
 const SLIDE_DURATION = 3;

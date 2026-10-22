@@ -11,8 +11,8 @@ import Carousel from './evcharger/carousel/page';
 
 // Image paths (place these images in public/images directory)
 const images = {
-  boom1: '/assets/Years Experiance 1.jpg',
-  boom2: '/assets/Years Experiance 2.jpg',
+  boom1: '/Updated/synergy/10.png',
+  boom2: '/Updated/synergy/9.png',
   per: '/assets/peri.jpg',
   Monitor: '/assets/Monitor.jpg',
   boom: '/assets/Boom-Barrier.jpeg',

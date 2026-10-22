@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation'
 import { Mail, Phone, Facebook, Twitter, Linkedin, Menu, X } from 'lucide-react'
 import ProductsDropdown from './Dropdown'
 import Image from 'next/image'
-import logo from '../../public/logo.jpg'
 
 const contactInfo = {
   email: "business@synergy-access.com",
@@ -89,7 +88,7 @@ const Header: React.FC = () => {
         <div className="container px-2 mx-auto md:px-4">
           <div className="flex items-center justify-between h-14 md:h-16">
             <Link href="/" className="flex items-center min-w-[120px]">
-              <Image src={logo} alt="Synergy Access Logo" width={120} height={40} priority className="w-auto h-12 sm:h-15" />
+              <Image src="/Updated/synergy/icon.png" alt="Synergy Access Logo" width={120} height={40} priority className="w-auto h-12 sm:h-15" />
             </Link>
             {/* Desktop Nav */}
             <div className="items-center justify-center flex-1 hidden ml-4 lg:flex">

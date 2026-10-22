@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import logo from '../../public/logo.jpg';
 
 import {
   MapPin,
@@ -55,7 +54,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src={logo}
+                src="/Updated/synergy/icon.png"
                 alt="Synergy Access Logo"
                 width={125}
                 height={156}
