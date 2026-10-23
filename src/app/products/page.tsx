@@ -16,10 +16,10 @@ export default function ProductsPage() {
     { name: 'Tyre Killers', description: 'Automatic tyre killers for unauthorized vehicle prevention', image: '/assets/tyrekiller.jpeg', category: 'Access Control & Barriers', price: '80000' },
 
     // Turnstiles & Gates
-    { name: 'Tripod Turnstiles', description: 'Durable tripod turnstiles for pedestrian access control', image: '/assets/turnstiles.jpg', category: 'Turnstiles & Gates', price: '50000' },
-    { name: 'Flap Barriers', description: 'Premium flap barriers for modern office environments', image: '/assets/flap.jpeg', category: 'Turnstiles & Gates', price: '85000' },
-    { name: 'Full Height Turnstiles', description: 'Maximum security full height rotating turnstiles', image: '/assets/fullheight.jpg', category: 'Turnstiles & Gates', price: '150000' },
-    { name: 'P-Type Swing Barriers', description: 'Elegant swing barriers for premium access control', image: '/assets/ptype.jpg', category: 'Turnstiles & Gates', price: '95000' },
+    { name: 'Tripod Turnstiles', description: 'Durable tripod turnstiles for pedestrian access control', image: '/Updated/Updated-october/Img-10.jpeg', category: 'Turnstiles & Gates', price: '50000' },
+    { name: 'Flap Barriers', description: 'Premium flap barriers for modern office environments', image: '/Updated/Updated-october/Img-1.jpeg', category: 'Turnstiles & Gates', price: '85000' },
+    { name: 'Full Height Turnstiles', description: 'Maximum security full height rotating turnstiles', image: '/Updated/Updated-october/Img-17.jpeg', category: 'Turnstiles & Gates', price: '150000' },
+    { name: 'P-Type Swing Barriers', description: 'Elegant swing barriers for premium access control', image: '/Updated/Updated-october/Img-14.jpeg', category: 'Turnstiles & Gates', price: '95000' },
 
     // Parking Systems
     { name: 'Parking Management', description: 'Complete parking management systems with automation', image: '/assets/parkingmanagement.jpg', category: 'Parking Systems', price: '300000' },
@@ -80,25 +80,25 @@ export default function ProductsPage() {
       products: [
         {
           name: 'Tripod Turnstiles',
-          image: '/assets/turnstiles.jpg',
+          image: '/Updated/Updated-october/Img-10.jpeg',
           href: '/products/tripod-turnstile',
           description: 'Durable tripod turnstiles for pedestrian access control'
         },
         {
           name: 'Flap Barriers',
-          image: '/assets/flap.jpeg',
+          image: '/Updated/Updated-october/Img-1.jpeg',
           href: '/products/flap-swing-barrier',
           description: 'Premium flap barriers for modern office environments'
         },
         {
           name: 'Full Height Turnstiles',
-          image: '/assets/fullheight.jpg',
+          image: '/Updated/Updated-october/Img-17.jpeg',
           href: '/products/full-height-turnstile',
           description: 'Maximum security full height rotating turnstiles'
         },
         {
           name: 'P-Type Swing Barriers',
-          image: '/assets/ptype.jpg',
+          image: '/Updated/Updated-october/Img-14.jpeg',
           href: '/products/p-type-swing-barrier',
           description: 'Elegant swing barriers for premium access control'
         }

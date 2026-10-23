@@ -3,8 +3,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Building2, KeyRound, Users, Shield, Wrench, Clock, Database } from "lucide-react";
 import Head from "next/head";
-const PsbBanner = '/assets/P-GATE.jpg';
-const banner = '/assets/ptype.jpg';
+const PsbBanner = '/Updated/Updated-october/Img-14.jpeg';
+const banner = '/Updated/Updated-october/Img-14.jpeg';
 import Image from "next/image";
 
 

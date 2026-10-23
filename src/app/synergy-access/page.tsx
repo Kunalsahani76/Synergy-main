@@ -150,7 +150,7 @@ export default function SynergyAccessPage() {
             {[
               { name: "Boom Barriers", count: "5+ Models", image: "/assets/boombarr.jpg" },
               { name: "Bollards", count: "3+ Types", image: "/assets/bollard.jpg" },
-              { name: "Turnstiles", count: "4+ Variants", image: "/assets/turnstiles.jpg" },
+              { name: "Turnstiles", count: "4+ Variants", image: "/Updated/Updated-october/Img-10.jpeg" },
               { name: "Access Control", count: "10+ Systems", image: "/assets/Face.jpg" },
               { name: "Parking Systems", count: "6+ Solutions", image: "/assets/parking.jpg" },
               { name: "Metal Detectors", count: "3+ Models", image: "/assets/dfmd.png" },

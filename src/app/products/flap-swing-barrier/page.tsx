@@ -6,10 +6,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from 'next/link';
 
-const FlapSwingBanner = '/assets/Flap.jpg';
-const Retractable = '/assets/retractable.png';
-const Swing = '/assets/swing.png';
-const banner = '/assets/flap.jpeg';
+const FlapSwingBanner = '/Updated/Updated-october/Img-1.jpeg';
+const Retractable = '/Updated/Updated-october/Img-4.jpeg';
+const Swing = '/Updated/Updated-october/Img-5.jpeg';
+const banner = '/Updated/Updated-october/Img-1.jpeg';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },

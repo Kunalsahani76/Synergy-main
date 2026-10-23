@@ -3,9 +3,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Building2, KeyRound, Users, Shield, Wrench, Clock, Database } from "lucide-react";
 import Head from "next/head";
-const SfhtBanner = '/assets/turnstiles.jpg';
+const SfhtBanner = '/Updated/Updated-october/Img-17.jpeg';
 import Image from "next/image";
-const banner = '/assets/fullheight.jpg';
+const banner = '/Updated/Updated-october/Img-17.jpeg';
 
 
 const fadeIn = {
