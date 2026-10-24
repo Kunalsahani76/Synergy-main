@@ -354,7 +354,7 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-2 sm:gap-4">
                 <Link href="/about" aria-label="Learn more about Synergy Access">
                 <motion.div
-                  className="relative transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
+                  className="relative overflow-hidden transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                   style={{ aspectRatio: '1/1' }}
@@ -363,13 +363,13 @@ export default function Home() {
                     src={images.boom1}
                     alt="Security equipment"
                     fill
-                    className="object-cover"
+                    className="object-cover scale-[1.55] -translate-x-6 translate-y-6"
                   />
                 </motion.div>
                 </Link>
                 <Link href="/about" aria-label="Learn more about Synergy Access">
                 <motion.div
-                  className="relative mt-3 sm:mt-6 transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
+                  className="relative mt-3 overflow-hidden transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                   style={{ aspectRatio: '1/1' }}
@@ -378,7 +378,7 @@ export default function Home() {
                     src={images.boom2}
                     alt="Access control"
                     fill
-                    className="object-cover"
+                    className="object-cover scale-[1.55] -translate-x-6 translate-y-6"
                   />
                 </motion.div>
                 </Link>
