@@ -6,7 +6,7 @@ import Head from "next/head";
 const TripodBanner = '/Updated/Updated-october/Img-10.jpeg';
 const SysTT1000 = '/Updated/Updated-october/Img-11.jpeg';
 const SysTT2000 = '/Updated/Updated-october/Img-38.jpeg';
-const banner = '/Updated/Updated-october/Img-10.jpeg';
+const banner = '/assets/tripod-turnstile.jpeg';
 
 import Image from "next/image";
 

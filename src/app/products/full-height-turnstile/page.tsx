@@ -5,7 +5,7 @@ import { ShieldCheck, Building2, KeyRound, Users, Shield, Wrench, Clock, Databas
 import Head from "next/head";
 const SfhtBanner = '/Updated/Updated-october/Img-17.jpeg';
 import Image from "next/image";
-const banner = '/Updated/Updated-october/Img-17.jpeg';
+const banner = '/assets/fullheight.jpg';
 
 
 const fadeIn = {

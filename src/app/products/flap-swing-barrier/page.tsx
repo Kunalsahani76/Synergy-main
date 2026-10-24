@@ -9,7 +9,7 @@ import Link from 'next/link';
 const FlapSwingBanner = '/Updated/Updated-october/Img-1.jpeg';
 const Retractable = '/Updated/Updated-october/Img-4.jpeg';
 const Swing = '/Updated/Updated-october/Img-5.jpeg';
-const banner = '/Updated/Updated-october/Img-1.jpeg';
+const banner = '/assets/flap.jpeg';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
