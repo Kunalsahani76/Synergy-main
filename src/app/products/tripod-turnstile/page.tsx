@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Building2, KeyRound, Users } from "lucide-react";
 import Head from "next/head";
-const TripodBanner = '/Updated/Updated-october/Img-10.jpeg';
+const TripodBanner = '/Updated/Updated-october/Tripod%20Turnstile.jpg';
 const SysTT1000 = '/Updated/Updated-october/Img-11.jpeg';
 const SysTT2000 = '/Updated/Updated-october/Img-38.jpeg';
 const banner = '/assets/tripod-turnstile.jpeg';

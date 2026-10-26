@@ -6,8 +6,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from 'next/link';
 
-const FlapSwingBanner = '/Updated/Updated-october/Img-1.jpeg';
-const Retractable = '/Updated/Updated-october/Img-4.jpeg';
+const FlapSwingBanner = '/Updated/Updated-october/FlapSwing%20Barrier2.jpg';
+const Retractable = '/Updated/Updated-october/Retractable%20Flap%20Barrier%20RFB-606.jpg';
 const Swing = '/Updated/Updated-october/Img-5.jpeg';
 const banner = '/assets/flap.jpeg';
 
