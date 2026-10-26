@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Building2, KeyRound, Users, Shield, Wrench, Clock, Database } from "lucide-react";
 import Head from "next/head";
-const SfhtBanner = '/Updated/Updated-october/Img-17.jpeg';
+const SfhtBanner = '/Updated/Updated-october/SFHT-3000 Full Height Turnstile.jpg';
 import Image from "next/image";
 const banner = '/assets/fullheight.jpg';
 

@@ -9,9 +9,9 @@ import { generateSEOData, generateStructuredData } from '../../../components/uti
 
 
 const banner = '/assets/Boom Barrier/Hero.png';
-const boom1 = '/assets/Super-Fast 3.jpeg';
-const boom2 = '/assets/Quick-5.jpg';
-const boom3 = '/assets/Supermacy-7.jpg';
+const boom1 = '/Updated/Boom-Barrier/Super-Fast 3.jpg';
+const boom2 = '/Updated/Boom-Barrier/Quick 5.jpg';
+const boom3 = '/Updated/Boom-Barrier/Supermacy 7.jpg';
 
 const boomBarrierModels = [
   {
