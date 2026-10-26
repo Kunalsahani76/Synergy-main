@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Building2, KeyRound, Users, Shield, Wrench, Clock, Database } from "lucide-react";
 import Head from "next/head";
-const PsbBanner = '/Updated/Updated-october/Img-14.jpeg';
+const PsbBanner = '/Updated/Updated-october/PSB-606 P-Type Swing Barrier.jpg';
 const banner = '/assets/ptype.jpg';
 import Image from "next/image";
 
