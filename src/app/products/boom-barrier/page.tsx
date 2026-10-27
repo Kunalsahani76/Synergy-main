@@ -51,8 +51,8 @@ const boomBarrierModels = [
       'Heavy-Duty Industrial Motor with Long Service Life',
     ],
     pdfSpecifications: [
-      ['Boom Arm Length', 'Up to 3 metres'], ['Opening / Closing Time', '0.6–1.5 seconds'],
-      ['Power Consumption', '220 W'], ['Duty Cycle', '100% continuous operation'],
+      ['Boom Arm Length', 'Up to 3 Meters'], ['Opening / Closing Time', '0.6 – 1.5 Seconds'],
+      ['Power Consumption', '220 W'], ['Duty Cycle', '100% Continuous Operation'],
       ['Operating Voltage', '230V AC, 50Hz'], ['Motor Type', 'High-Speed BLDC / Servo Motor'],
       ['Protection Rating', 'IP54 / IP55'], ['Vehicle Detection', 'Inductive Loop Detector Compatible'],
       ['Communication Interface', 'TCP/IP, RS485, Dry Contact'], ['Design Life', 'Minimum 5 million operating cycles'],

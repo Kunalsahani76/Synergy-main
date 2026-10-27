@@ -8,8 +8,8 @@ import InternalLinks from '../../components/SEO/InternalLinks';
 
 import Image from 'next/image';
 const banner = '/Updated/synergy/about us.png';
-const barrier1 = '/assets/barrier.png';
-const barrier2 = '/assets/barrier2.png';
+const barrier1 = '/Updated/synergy/about-turnstiles.png';
+const barrier2 = '/Updated/synergy/about-boom-barrier.png';
 const solutionIcon = '/assets/icons/iso.png';
 const solution1 = '/assets/icons/msme.png';
 const solution2 = '/assets/icons/ce.png';
@@ -368,7 +368,7 @@ const About: React.FC = () => {
                     src={barrier2}
                     alt="Advanced boom barrier technology"
                     fill
-                    className="object-cover"
+                    className="object-contain bg-white"
                     sizes="200px"
                   />
                 </motion.div>
