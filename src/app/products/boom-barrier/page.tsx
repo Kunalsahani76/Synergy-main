@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { RouteIcon, Radio, ScanLine, Siren, Waves } from 'lucide-react';
+import { RouteIcon, Radio, Siren } from 'lucide-react';
 import Image from 'next/image';
 import SEOHead from '../../../components/SEO/SEOHead';
 import InternalLinks from '../../../components/SEO/InternalLinks';
@@ -107,7 +107,7 @@ const boomBarrierModels = [
       'Ideal for residential societies, commercial complexes, industrial facilities, and parking management applications.',
     ],
     pdfSpecifications: [
-      ['Boom Length', '3–5 m'], ['Opening Time', '3–5 seconds'], ['Duty Cycle', 'Up to 100%'],
+      ['Boom Length', '3–5 Meters'], ['Opening Time', '3–5 seconds'], ['Duty Cycle', 'Up to 100%'],
       ['Protection Rating', 'IP54 / IP55'], ['Motor Supply', '230V AC, 50Hz'],
       ['Power Consumption', '180 W'], ['Service Life', '>5 million cycles'],
       ['Manual Override', 'Available'], ['Safety Auto-Reverse', 'Supported'],
@@ -163,7 +163,7 @@ const boomBarrierModels = [
       'Weatherproof and corrosion-resistant housing for outdoor installations.',
     ],
     pdfSpecifications: [
-      ['Boom Length', '5–7 metres'], ['Drive Type', 'Electromechanical Geared Motor'],
+      ['Boom Length', '5–7 Meters'], ['Drive Type', 'Electromechanical Geared Motor'],
       ['Power Supply', '230V AC, 50Hz'], ['Motor Power', '180 W'],
       ['Opening / Closing Time', '4–8 seconds'], ['Duty Cycle', 'Up to 100% intensive use'],
       ['Protection Rating', 'IP54 / IP55'], ['Operating Temperature', '-20°C to +55°C'],
@@ -199,22 +199,22 @@ const productCategories = [
 
 const accessories = [
   {
-    icon: <Radio className="w-10 h-10 text-blue-500" />,
+    icon: '/Updated/Icons/Remote & Receiver40.png',
     label: 'Remote & Receiver',
     bg: 'bg-blue-50',
   },
   {
-    icon: <ScanLine className="w-10 h-10 text-green-500" />,
+    icon: '/Updated/Icons/Infrared Sensor 40.png',
     label: 'Infrared sensors',
     bg: 'bg-green-50',
   },
   {
-    icon: <Siren className="w-10 h-10 text-yellow-500" />,
+    icon: '/Updated/Icons/Flashlight 40.png',
     label: 'Flashing light',
     bg: 'bg-yellow-50',
   },
   {
-    icon: <Waves className="w-10 h-10 text-purple-500" />,
+    icon: '/Updated/Icons/Loop detectors 40.png',
     label: 'Loop detectors',
     bg: 'bg-purple-50',
   },
@@ -485,7 +485,9 @@ export default function BoomBarrier() {
                   whileHover={{ scale: 1.07, boxShadow: '0 8px 32px rgba(0,0,0,0.12)' }}
                   className={`flex flex-col items-center p-6 rounded-xl shadow bg-white ${acc.bg} transition-all duration-300`}
                 >
-                  <div className="mb-3">{acc.icon}</div>
+                  <div className="mb-3">
+                    <Image src={acc.icon} alt={acc.label} width={40} height={40} className="object-contain" />
+                  </div>
                   <div className="text-lg font-semibold text-gray-800">{acc.label}</div>
                 </motion.div>
               ))}
