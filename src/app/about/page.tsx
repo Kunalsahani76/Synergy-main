@@ -7,7 +7,7 @@ import { Shield, Target, Users, Award, CheckCircle, TrendingUp, Trophy, Puzzle, 
 import InternalLinks from '../../components/SEO/InternalLinks';
 
 import Image from 'next/image';
-const banner = '/Updated/synergy/about us.png';
+const banner = '/Updated/Updated-october/About-hero.jpg';
 const barrier1 = '/Updated/Updated-october/About-img.jpg';
 const barrier2 = '/Updated/synergy/about-boom-barrier.png';
 const solutionIcon = '/assets/icons/iso.png';
