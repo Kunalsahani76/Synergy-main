@@ -11,8 +11,8 @@ import Carousel from './evcharger/carousel/page';
 
 // Image paths (place these images in public/images directory)
 const images = {
-  boom1: '/Updated/synergy/10.png',
-  boom2: '/Updated/synergy/9.png',
+  boom1: '/Updated/Updated-october/About-img.jpg',
+  boom2: '/Updated/synergy/about-boom-barrier.png',
   per: '/assets/peri.jpg',
   Monitor: '/assets/Monitor.jpg',
   boom: '/assets/Boom-Barrier.jpeg',
@@ -351,53 +351,55 @@ export default function Home() {
         <div className="container relative z-10 px-2 sm:px-4 mx-auto">
           <div className="grid items-center gap-6 sm:gap-8 lg:grid-cols-2">
             <motion.div className="relative" variants={fadeInLeft}>
-              <div className="grid grid-cols-2 gap-2 sm:gap-4">
-                <Link href="/about" aria-label="Learn more about Synergy Access">
-                <motion.div
-                  className="relative overflow-hidden transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  style={{ aspectRatio: '1/1' }}
-                >
-                  <Image
-                    src={images.boom1}
-                    alt="Security equipment"
-                    fill
-                    className="object-cover scale-[1.55] -translate-x-6 translate-y-6"
-                  />
-                </motion.div>
+              <div className="relative h-64 sm:h-80 md:h-96">
+                <Link href="/about" aria-label="Learn more about Synergy Access" className="absolute inset-0">
+                  <motion.div
+                    className="absolute inset-0 overflow-hidden rounded-2xl bg-white shadow-2xl"
+                    whileHover={{ scale: 1.02, rotate: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Image
+                      src={images.boom1}
+                      alt="Security equipment"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </motion.div>
                 </Link>
+
                 <Link href="/about" aria-label="Learn more about Synergy Access">
-                <motion.div
-                  className="relative mt-3 overflow-hidden transition-shadow duration-300 bg-white border-2 border-white shadow-lg rounded-xl hover:shadow-xl sm:border-4"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  style={{ aspectRatio: '1/1' }}
-                >
-                  <Image
-                    src={images.boom2}
-                    alt="Access control"
-                    fill
-                    className="object-cover scale-[1.55] -translate-x-6 translate-y-6"
-                  />
-                </motion.div>
+                  <motion.div
+                    className="absolute bottom-4 right-4 h-32 w-32 overflow-hidden rounded-xl border-4 border-white bg-white shadow-xl sm:h-40 sm:w-40 md:h-48 md:w-48"
+                    whileHover={{ scale: 1.05, rotate: -2 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Image
+                      src={images.boom2}
+                      alt="Access control"
+                      fill
+                      className="object-contain"
+                      sizes="200px"
+                    />
+                  </motion.div>
+                </Link>
+
+                <Link href="/about" aria-label="Learn more about Synergy Access">
+                  <motion.div
+                    className="absolute -right-2 -top-2 z-10 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-blue-600 to-red-400 text-white shadow-xl ring-4 ring-red-200/30 sm:-right-4 sm:-top-4 sm:h-28 sm:w-28"
+                    initial={{ opacity: 0, scale: 0, rotate: -180 }}
+                    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="text-center">
+                      <div className="text-xl font-extrabold drop-shadow sm:text-3xl">6+</div>
+                      <div className="text-xs font-semibold uppercase tracking-wider sm:text-sm">Years</div>
+                      <div className="text-xs font-semibold uppercase tracking-wider sm:text-sm">Experience</div>
+                    </div>
+                  </motion.div>
                 </Link>
               </div>
-              <Link href="/about" className="block" aria-label="Learn more about Synergy Access">
-              <motion.div 
-                className="absolute flex items-center justify-center w-20 h-20 sm:w-28 sm:h-28 text-white border-2 border-white rounded-full shadow-xl bg-gradient-to-br from-blue-600 to-red-400 -top-4 -right-4 sm:-top-6 sm:-right-6 ring-4 ring-red-200/30 sm:ring-4 animate-float"
-                initial={{ opacity: 0, scale: 0, rotate: -180 }}
-                whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <div className="text-center">
-                  <div className="text-xl sm:text-3xl font-extrabold drop-shadow">6+</div>
-                  <div className="text-xs font-semibold tracking-wider uppercase sm:text-sm">Years</div>
-                  <div className="text-xs font-semibold tracking-wider uppercase sm:text-sm">Experience</div>
-                </div>
-              </motion.div>
-              </Link>
             </motion.div>
             <motion.div 
               variants={fadeInRight} 

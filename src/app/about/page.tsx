@@ -8,7 +8,7 @@ import InternalLinks from '../../components/SEO/InternalLinks';
 
 import Image from 'next/image';
 const banner = '/Updated/synergy/about us.png';
-const barrier1 = '/Updated/synergy/about-turnstiles.png';
+const barrier1 = '/Updated/Updated-october/About-img.jpg';
 const barrier2 = '/Updated/synergy/about-boom-barrier.png';
 const solutionIcon = '/assets/icons/iso.png';
 const solution1 = '/assets/icons/msme.png';
