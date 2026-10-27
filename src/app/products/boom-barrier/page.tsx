@@ -211,7 +211,7 @@ const accessories = [
   {
     icon: '/Updated/Icons/Flashlight 40.png',
     label: 'Flashing light',
-    bg: 'bg-yellow-50',
+    bg: 'bg-white',
   },
   {
     icon: '/Updated/Icons/Loop detectors 40.png',
